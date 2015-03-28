@@ -37,6 +37,7 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Link</a></li>
               </ul>
+              <p class="navbar-text navbar-right">Pozdravljen <a href="#" class="navbar-link">Janko</a></p>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
