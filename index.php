@@ -1,3 +1,8 @@
+<?php
+    // Prostor za spremenljivke
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +54,7 @@
             
             <div class="koda">
               <?php
-			  
+			     
 			  ?>
             </div>
         </div>
