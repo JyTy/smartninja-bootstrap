@@ -64,7 +64,7 @@
             <form action="post.php" method="post">
 			  <div class="form-group">
 				<label for="mojeIme">Moje ime:</label>
-				<input type="text" class="form-control" id="mojeIme" placeholder="Moje ime">
+				<input type="text" class="form-control" id="mojeIme" name="ime" placeholder="Moje ime">
 			  </div>
 			  <button type="submit" class="btn btn-default">Oddaj</button>
 			</form>
