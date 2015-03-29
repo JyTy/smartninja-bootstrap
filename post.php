@@ -23,7 +23,7 @@
 	$mojeIme = "";
 	
 	if ($mojeIme) {
-		$sporocilo = "Pozdravljen, ".$mojeIme."!";
+		$sporocilo = "Hey, ".$mojeIme."!";
 	} else {
 		$sporocilo = "Prosim vpiši svoje ime.";
 	}
@@ -50,7 +50,7 @@
 				<li class="active"><a href="post.php">POST</a></li>
               </ul>
 			  <?php if ($mojeIme) { ?>
-				<p class="navbar-text navbar-right">Pozdravljen, <?php echo $mojeIme;?></p>
+				<p class="navbar-text navbar-right">Hey, <?php echo $mojeIme;?></p>
 			  <?php } ?>	
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

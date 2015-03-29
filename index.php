@@ -40,8 +40,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Link</a></li>
+				<li><a href="post.php">POST</a></li>
               </ul>
-              <p class="navbar-text navbar-right">Pozdravljen, Janko</p>
+              <p class="navbar-text navbar-right">Hey, me</p>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
