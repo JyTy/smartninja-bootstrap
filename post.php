@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SmartNinja - Osnove PHPja</title>
+    <title>SmartNinja - POST</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,14 @@
   </head>
   
 	<?php
-    // Prostor za spremenljivke
+    // Dobi moje ime iz forme
+	$mojeIme = "";
+	
+	if ($mojeIme) {
+		$sporocilo = "Pozdravljen, ".$mojeIme."!";
+	} else {
+		$sporocilo = "Prosim vpiši svoje ime.";
+	}
 
 	?>
   <body>
@@ -39,23 +46,28 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
+                <li><a href="index.php">Osnove PHP</a></li>
+				<li class="active"><a href="post.php">POST</a></li>
               </ul>
-              <p class="navbar-text navbar-right">Pozdravljen, Janko</p>
+			  <?php if ($mojeIme) { ?>
+				<p class="navbar-text navbar-right">Pozdravljen, <?php echo $mojeIme;?></p>
+			  <?php } ?>	
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
         
         <div class="container">
             <div class="jumbotron">
-              <h1>Hello, world!</h1>
+              <h1><?php echo $sporocilo;?></h1>
             </div>
             
-            <div class="koda">
-              <?php
-			     
-			  ?>
-            </div>
+            <form action="post.php" method="post">
+			  <div class="form-group">
+				<label for="mojeIme">Moje ime:</label>
+				<input type="text" class="form-control" id="mojeIme" placeholder="Moje ime">
+			  </div>
+			  <button type="submit" class="btn btn-default">Oddaj</button>
+			</form>
         </div>
         
         
