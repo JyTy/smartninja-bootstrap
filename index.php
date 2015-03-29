@@ -1,9 +1,3 @@
-<?php
-    // Prostor za spremenljivke
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,6 +17,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+  
+	<?php
+    // Prostor za spremenljivke
+
+	?>
   <body>
        <nav class="navbar navbar-default">
           <div class="container-fluid">
